@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appListRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/scrapeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scrape Apps" />
+
+        <Button
+            android:id="@+id/showInstalledButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Installed Apps" />
+    </LinearLayout>
+</LinearLayout>
