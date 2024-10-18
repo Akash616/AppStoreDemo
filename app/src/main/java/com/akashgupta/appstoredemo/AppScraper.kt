@@ -41,5 +41,5 @@ data class App(
     val rating: Float,
     val appUrl: String,
     val packageName: String,
-    val isInstalled: Boolean 
+    val isInstalled: Boolean
 )
